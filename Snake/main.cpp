@@ -3,8 +3,9 @@ using namespace std;
 /*Start Variable*/
 bool GameOver = false;
 /*End Variable*/
-/*====================================================================================*/
+//Here we write Global Variable
 /*Start Setup*/
+/*====================================================================================*/
 void Setup()
 {
 
