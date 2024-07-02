@@ -20,7 +20,15 @@ void Setup()
 /*Start Draw*/
 void Draw()
 {
-
+ for (int i = 1; i <= height; i++) {
+    for (int j = 1; j <= width; j++) {
+    if (i == 1 || j == 1 || i == height || j ==width)
+        cout << "* ";
+        else
+        cout << "  ";
+        }
+        cout << endl;
+    }
 }
 /*End Draw*/
 /*====================================================================================*/
