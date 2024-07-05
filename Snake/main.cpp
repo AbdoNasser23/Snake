@@ -1,60 +1,78 @@
 #include <iostream>
+#include <vector>
 #include <ctime>
-using namespace std;
+#include <random>
+
+using std::cout;
+using std::cin;
+using std::getline;
+using std::endl;
+using std::srand;
+using std::string;
+using std::vector;
+using std::to_string;
+
 /*Start Variable*/
-srand(time(0));
+char Board[25][25];
+enum Buttons { UP, DOWN, LEFT, RIGHT, PUSE, EXIT };
+int score;
 bool GameOver;
-const int width = 26;
-const int height = 26;
-enum Direction = {UP,DOWN,LEFT,RIGHT,STOP,BOTH};
-int score , fruitX = (rand() % width - 1) + 1 ,fruitY = (rand() % height - 1) + 1, X = width / 2 ,Y = height / 2;
 /*End Variable*/
-/*Start Setup*/
-/*====================================================================================*/
-void Setup()
+
+/*Start Tools*/
+int randNum(const short int min, const short int max)
 {
+	std::random_device rd;
+	std::uniform_int_distribution<int> dist(min,max);
+	return dist(rd);
+}
+/*End Tools*/
+
+
+/*TODO: Board  -----   == Drawing ==   ----------------*/
+void Board_Drawing() { // (Name) Working on
 
 }
-/*End Setup*/
 /*====================================================================================*/
-/*Start Draw*/
-void Draw()
-{
- for (int i = 1; i <= height; i++) {
-    for (int j = 1; j <= width; j++) {
-    if (i == 1 || j == 1 || i == height || j ==width)
-        cout << "* ";
-        else
-        cout << "  ";
-        }
-        cout << endl;
-    }
-}
-/*End Draw*/
-/*====================================================================================*/
-/*Start Input*/
-void Input()
-{
+
+
+/*TODO: Snake  -----   == Drawing ==   ----------------*/
+void Snake_Drawing() { // (Name) Working on
 
 }
-/*End Input*/
-/*====================================================================================*/
-/*Start Logic*/
-void Logic()
-{
+/*------------------   == Moving  ==  ----------------*/
+void Snake_Moving() { // (Name) Working on
 
 }
-/*End Logic*/
+
+/*------------------   == Valid   ==  ----------------*/
+void Snake_Valid() { // (Name) Working on
+
+}
+
+/*-----------------   == Score   ==  ----------------*/
+void Snake_Score() { // (Name) Working on
+
+}
 /*====================================================================================*/
+
+
+/*TODO: Fruits -----   == Drawing ==   --------------------------------*/
+void Fruits_Draeing() { // (Name) Working on
+
+}
+/*====================================================================================*/
+
+
+
 int main()
 {
-	Setup();
-	while(!GameOver)
-	{
-		system("cls");
-		Draw();
-		Input();
-		Logic();
-	}
+	// Setup();
+	// while(!GameOver)
+	// {
+	// 	system("cls");
+	// 	// Todo: add the Body
+	// }
+
 	return 0;
 }
